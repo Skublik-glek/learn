@@ -23,7 +23,6 @@
 # a = 15 / 3
 # a = 3 - 2
 # a = 5**2 # возведение в степень
-# a = 5^2 # возведение в степень
 # a = 15 // 2 # деление без остатка
 # a = 15 % 2 # остаток от деления
 
@@ -242,4 +241,13 @@ def factorial(n):
         else:
             return n * factorial(n + 1)
 
-print(factorial(-3))
+
+def F(n):
+    if n <= 1:
+        return 0
+    elif n > 1 and n % 2 == 1:
+        return F(n-1) + 3*n**2
+    else:
+        return n/2 + F(n - 1) + 2
+print(F(22))
+        
