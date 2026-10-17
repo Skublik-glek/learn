@@ -157,27 +157,27 @@
 #                 if f == 0:
 #                     print(w, x, y, z)
 
-[0, 170, 255]
-onePixel: list = [0, 170, 255]
-print(onePixel[1]) # 170
-onePixel[0] = 100 # замена первого элемента на 100
-print(onePixel) # [100, 170, 255]
+# [0, 170, 255]
+# onePixel: list = [0, 170, 255]
+# print(onePixel[1]) # 170
+# onePixel[0] = 100 # замена первого элемента на 100
+# print(onePixel) # [100, 170, 255]
 
-for i in onePixel: # перебор элементов в списке
-    print(i)
+# for i in onePixel: # перебор элементов в списке
+#     print(i)
 
-for i in range(len(onePixel)): # перебор элементов в списке
-    print(onePixel[i])
+# for i in range(len(onePixel)): # перебор элементов в списке
+#     print(onePixel[i])
 
-onePixel.append(0) # добавление нуля в список
-print(onePixel)
-onePixel.remove(0) # удаление нуля из списка
-print(onePixel)
-onePixel.append(12)
-print(onePixel)
-onePixel.pop(3) # удаление 12 из списка по позиции
-print(onePixel)
-print(onePixel[1:3]) # [170, 255]
+# onePixel.append(0) # добавление нуля в список
+# print(onePixel)
+# onePixel.remove(0) # удаление нуля из списка
+# print(onePixel)
+# onePixel.append(12)
+# print(onePixel)
+# onePixel.pop(3) # удаление 12 из списка по позиции
+# print(onePixel)
+# print(onePixel[1:3]) # [170, 255]
 
 # a: str = input() # 1 int
 # spis = a.split() # разделение сроки в список
@@ -195,3 +195,51 @@ print(onePixel[1:3]) # [170, 255]
 # print(spis.index('2')) # поиск позоции где стоит элемент
 
 # тестовое изменение
+
+# a = []
+
+# for i in range(1, 101): # полный генератор списка от 1 до 100
+#     a.append(i)
+
+# print(a)
+
+# print([i for i in range(1, 101)]) # короткий генератор списка от 1 до 100
+
+# a = ["1", "2", "3", "4"]
+# print(a)
+# a = [int(i) for i in a]
+# print(a)
+
+def f(x): # Базовая математическая функция
+    y = 1 * x**2 - 2 * x + 3
+    print("Test") # Будет видно при вызове функции =
+    return y # будет видно только если напечатать результат функции print(f(0))
+
+def from10to2(chis, osnov):
+    itog = ""
+    while chis >= 1: 
+        ost = chis % osnov 
+        itog = str(ost) + itog 
+        chis = chis // osnov
+    return itog
+
+# a = int(input())
+# osnov = int(input())
+# print(from10to2(a, osnov))
+
+def factorial(n):
+    result = 1
+    for i in range(1, n+1):
+        result = result * i
+    return result
+
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        if n > 0:
+            return n * factorial(n - 1)
+        else:
+            return n * factorial(n + 1)
+
+print(factorial(-3))
