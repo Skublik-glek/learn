@@ -249,5 +249,40 @@ def F(n):
         return F(n-1) + 3*n**2
     else:
         return n/2 + F(n - 1) + 2
-print(F(22))
-        
+# print(F(22))
+
+# a = [1, 1, 1, 2, 3, 3]
+# b = {1, 2, 3, 4, 3, 3}
+# print(b)
+
+# b.add(5)
+
+# def indexM(b, i):
+#     for n, e in enumerate(b):
+#         if n == i:
+#             return e
+
+# print(indexM(b, 1))
+
+# dictionary = {
+#     "Автомобиль": "Car",
+#     "Кошка": "Cat",
+#     "Яблоко": "Apple"
+# }
+
+# print(dictionary["Яблоко"])
+# dictionary["Дверь"] = "Door"
+# print(dictionary["Дверь"])
+# dictionary.pop("Дверь", "Door")
+# print(dictionary)
+# del dictionary["Яблоко"]
+# print(dictionary)
+
+# for i in dictionary:
+#     print(i, dictionary[i])
+
+# for i in dictionary.keys():
+#     print(i)
+
+# for i in dictionary.values():
+#     print(i)
