@@ -289,19 +289,19 @@ def F(n):
 # for i in dictionary.values():
 #     print(i)
 
-n = int(input())
-a = str(input())
-m = set()
-while a != "HELP":
-    if a == "YES":
-        x = b.split()
-        for i in x:
-            m.add(int(i))
-    elif a == "NO":
-        x = b.split()
-        for i in x:
-            if int(i) in m:
-                m.remove(int(i))
-    else: b = a
-    a = str(input())
-print(m)
+# n = int(input())
+# a = str(input())
+# m = set()
+# while a != "HELP":
+#     if a == "YES":
+#         x = b.split()
+#         for i in x:
+#             m.add(int(i))
+#     elif a == "NO":
+#         x = b.split()
+#         for i in x:
+#             if int(i) in m:
+#                 m.remove(int(i))
+#     else: b = a
+#     a = str(input())
+# print(m)
