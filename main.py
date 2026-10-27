@@ -1,5 +1,7 @@
 # chis1: int = 12398
 # chis1 = 12398
+from tkinter.messagebox import YES
+
 
 # chis2: float = 12398.0
 # chis2 = 12398.0
@@ -286,4 +288,20 @@ def F(n):
 
 # for i in dictionary.values():
 #     print(i)
-print("Тест")
+
+n = int(input())
+a = str(input())
+m = set()
+while a != "HELP":
+    if a == "YES":
+        x = b.split()
+        for i in x:
+            m.add(int(i))
+    elif a == "NO":
+        x = b.split()
+        for i in x:
+            if int(i) in m:
+                m.remove(int(i))
+    else: b = a
+    a = str(input())
+print(m)
