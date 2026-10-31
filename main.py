@@ -31,7 +31,7 @@ from tkinter.messagebox import YES
 # chis = 12
 # ost = chis % 2 # 0
 # itog = str(ost) # "0"
-# a = chis // 2 # 6
+# a = chis // 2 # 8
 # ost = a % 2 # 0
 # itog = str(ost) + itog # "00"
 # a = a // 2 # 3
@@ -88,7 +88,7 @@ from tkinter.messagebox import YES
 # chis = 12
 # ost = chis % 2 # 0
 # itog = str(ost) # "0"
-# a = chis // 2 # 6
+# a = chis // 2 # 8
 # ost = a % 2 # 0
 # itog = str(ost) + itog # "00"
 # a = a // 2 # 3
