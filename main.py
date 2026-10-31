@@ -128,6 +128,9 @@
 # print(ex1.count("а")) # 2
 # print(ex1.split()) # ['Тестовая', 'строка']
 
+# if "строка" in ex1:
+#     print("Подстрока находится внутри строки")
+
 # class Car:
 #     weight = 10
 #     speed = 200
